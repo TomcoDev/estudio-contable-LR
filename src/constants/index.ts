@@ -30,7 +30,7 @@ export const SERVICES_DATA: Service[] = [
   {
     id: 'gestion-ruc-ips',
     title: 'Gestión de RUC & IPS',
-    description: 'Trámites integrales ante la SET y entes reguladores para el inicio de sus actividades.',
+    description: 'Trámites integrales ante la DNIT y entes reguladores para el inicio de sus actividades.',
     features: [
       'Apertura de RUC',
       'Inscripción en IPS',
@@ -63,7 +63,7 @@ export const SERVICES_DATA: Service[] = [
   {
     id: 'administrativo-fiscal',
     title: 'Gestión Administrativa',
-    description: 'Mantenimiento preventivo y correctivo de su situación fiscal ante la SET.',
+    description: 'Mantenimiento preventivo y correctivo de su situación fiscal ante la DNIT.',
     features: [
       'Actualización de datos (Persona Física y Jurídica)',
       'Baja de Timbrados',

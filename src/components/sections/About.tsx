@@ -53,7 +53,7 @@ const About = () => {
             <p>
               Mi enfoque se centra en la precisión técnica y el cumplimiento normativo, 
               asegurando que tanto empresas unipersonales como sociedades operen con 
-              total tranquilidad ante la SET y otros entes reguladores.
+              total tranquilidad ante la DNIT y otros entes reguladores.
             </p>
           </div>
 
