@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Definimos el tema al estilo v4 para que Tailwind reconozca tus colores */
+@theme {
+  --color-midnight: #0D1126;
+  --color-gold: #A68B5B;
+  --color-professional-gray: #8C8C8C;
+  --color-kebab-case: #FFFFFF;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-pure-white text-midnight font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+/* El resto de tus estilos personalizados (scrollbar, etc) siguen igual aquí abajo */

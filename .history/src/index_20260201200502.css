@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  /* Configuración global para una navegación fluida entre secciones */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Estilos base para el cuerpo del sitio */
+  body {
+    @apply bg-pureWhite text-midnight font-sans antialiased;
+    /* pureWhite y midnight definidos en tu tailwind.config.js  */
+  }
+
+  /* Aplicamos la fuente Serif (Playfair Display) a todos los encabezados por defecto */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+/* --- Personalización de la experiencia de usuario --- */
+
+/* Cambia el color del texto seleccionado para que combine con la marca */
+::selection {
+  @apply bg-gold/30 text-midnight;
+}
+
+/* Estilización de la barra de desplazamiento (Scrollbar) para que no rompa la estética */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-pureWhite;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-midnight/20 rounded-full transition-colors duration-300;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gold/50;
+}
+
+/* --- Clases de Utilidad Personalizadas --- */
+@layer components {
+
+  /* Clase para secciones con espaciado consistente */
+  .section-padding {
+    @apply py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
+  }
+
+  /* Efecto de cristal para el Navbar (Glassmorphism) */
+  .glass-nav {
+    @apply bg-pureWhite/80 backdrop-blur-md border-b border-gray-100;
+  }
+}
